@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: Poppins;
+    margin: 0;
+    font-size: 16px;
+    color:azure;
+    background:#1e3932;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.menu{
+    display: flex;
+    padding-bottom: 300px;
+}
+.menu .food{
+    padding-left: 200px;
+    padding-top: 100px;
+}
+.menu .drinks{
+    padding-left: 200px;
+    padding-top: 50px;
+}
+:root{
+    --border-color: #fff5;
+    --w-image: 500px;
+    --calculate: calc(3 / 2);
+}
+header{
+    display: grid;
+    grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
+    grid-template-rows: 80px;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid var(--border-color);
+}
+header .logo img{
+    width: 80%;
+}
+header .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,Poppins;
+}
+header nav a{
+    color: azure;
+    font-weight: 400;
+}
+header nav ul{
+    height: 100%;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    gap: 20px;
+
+}
+header nav{
+    border-left: 1px solid var(--border-color);
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu-category {
+    margin-bottom: 30px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #006241;
+}
+
+button {
+    background: #006241;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #004d34;
+}
+
+
+.menu {
+    display: flex;
+    padding-bottom: 300px;
+    position: relative; 
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 55%;
+    width: 1px; 
+    height: 100%;
+    background-color: #fff5;
+    transform: translateX(-50%);
+}
+
+
+.cart-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: linear-gradient(135deg, #d8e4e0, #f7a746, #b8e0b8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    display: none;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cart-window h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#cart-total {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#close-cart {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#close-cart:hover {
+    background: darkred;
+}
